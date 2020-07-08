@@ -1,0 +1,22 @@
+{
+  "name": "fisicagora",
+  "version": "1.0.0",
+  "description": "Site que reuni diversas simulações de conceitos de fisica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomonteiro/fisicagora.git"
+  },
+  "author": "Diego Monteiro",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/diegomonteiro/fisicagora/issues"
+  },
+  "homepage": "https://github.com/diegomonteiro/fisicagora#readme",
+  "dependencies": {
+    "adminbsb-materialdesign": "^1.0.7"
+  }
+}

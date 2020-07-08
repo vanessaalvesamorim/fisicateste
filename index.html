@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>.: Física Agora - Central de simuladores de conceitos de física :.</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/css/themes/all-themes.min.css" rel="stylesheet" />
+</head>
+
+<body class="theme-black">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Carregando, Aguarde...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="Buscar um simulação...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html">FÍSICA-AGORA!!!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+
+                    <!-- #END# Tasks -->
+                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <div class="menu">
+                <ul id="lista-categorias" class="list">
+                    <li class="header">CATEGORIAS</li>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                            <span>TODAS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
+                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red" class="active">
+                            <div class="red"></div>
+                            <span>Red</span>
+                        </li>
+                        <li data-theme="pink">
+                            <div class="pink"></div>
+                            <span>Pink</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                            <span>Purple</span>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                            <span>Deep Purple</span>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                            <span>Indigo</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                            <span>Blue</span>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                            <span>Light Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                            <span>Cyan</span>
+                        </li>
+                        <li data-theme="teal">
+                            <div class="teal"></div>
+                            <span>Teal</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </li>
+                        <li data-theme="light-green">
+                            <div class="light-green"></div>
+                            <span>Light Green</span>
+                        </li>
+                        <li data-theme="lime">
+                            <div class="lime"></div>
+                            <span>Lime</span>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                            <span>Yellow</span>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                            <span>Amber</span>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                            <span>Orange</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                            <span>Deep Orange</span>
+                        </li>
+                        <li data-theme="brown">
+                            <div class="brown"></div>
+                            <span>Brown</span>
+                        </li>
+                        <li data-theme="grey">
+                            <div class="grey"></div>
+                            <span>Grey</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                            <span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                            <span>Black</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+
+          <div id="row_cards_simulacoes">
+          </div>
+
+          <div id="row_simulacoes" class="row">
+            <div class="col-md-12">
+              <div class="card">
+                        <div class="header">
+                            <h2 class="titulo-simulacao">
+                                TABS WITH ICON TITLE
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="">
+                                    <a href="#tab_simulacao" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">home</i> Simulação
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active">
+                                    <a href="#tab_explicacao" data-toggle="tab" aria-expanded="true">
+                                        <i class="material-icons">face</i> Explicação
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#tab_referencias" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">email</i> Referências
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade" id="tab_simulacao">
+                                    <div id="iframe-simulacao"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade active in" id="tab_explicacao">
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_referencias">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Jquery Core Js -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
+
+    <script src="componentes/simulacoes.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.css"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/raphael/raphael.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/morrisjs/morris.min.js"></script>
+
+    <!-- ChartJs -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/flot-charts/jquery.flot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="https://cdn.jsdelivr.net/npm/adminbsb-materialdesign@1.0.7/js/admin.js"></script>
+
+
+    <script>
+
+      //Preencher menu lateral com as simulações carregadas
+      preencher_menu_lateral(simulacoes);
+      preencher_cards(simulacoes);
+
+      $("#row_simulacoes").css("display","none");
+      $("#row_cards_simulacoes").css("display","block");
+
+      $(document).on('click', '.link_simulacao', function(e){
+        e.preventDefault();
+        var obj = $(this);
+        //console.log("Renderizar simulação: ",obj.data('simulacao-id'));
+        $("#iframe-simulacao").empty();
+
+        $("#row_simulacoes").css("display","block");
+        $("#row_cards_simulacoes").css("display","none");
+
+        var iframe = "<iframe src=\""+obj.data("link-iframe-simulacao")+"\" width=\"100%\" height=\"450\" scrolling=\"no\" allowfullscreen></iframe>";
+        //console.log("Preencher com iframe: ", iframe);
+        $("#iframe-simulacao").html(iframe);
+
+        var simulacao = null;
+
+        $.each(simulacoes["fisica"], function(k,v){
+          $.each(v.simulacoes, function(w,x){
+            if(x.id == obj.data('simulacao-id')){
+              simulacao = x;
+            }
+          });
+        });
+
+        console.log(simulacao);
+        $(".titulo-simulacao").html(simulacao.titulo);
+
+        $("#tab_explicacao").html(simulacao.descricao_completa);
+        $("#tab_referencias").html(simulacao.link);
+
+      });
+
+      $(document).on('ready', function(){
+
+      });
+
+
+      function preencher_cards(simulacoes){
+        var div = $("#row_cards_simulacoes");
+
+        var categorias = Object.keys(simulacoes["fisica"]);
+        var cores = ["red","green","cyan","orange","blue-gray","pink","lightblue","lightgreen","amber"];
+        var simuls = [];
+        $.each(simulacoes["fisica"], function(k,v){
+          $.each(v.simulacoes, function(x,w){
+            simuls.push(w);
+          });
+        });
+
+        vals = split(simuls,3);
+
+        var ret = "";
+
+        $.each(vals, function(key,val){
+          ret += "<div class='row'>";
+
+            $.each(val, function(kx,vx){
+              ret += "<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>";
+              ret += "<div class=\"card\">";
+                ret += "<div class=\"header bg-"+cores[key]+"\">";
+                    ret += "<h2>"+vx.titulo+"</h2>";
+                ret += "</div>";
+                ret += "<div class=\"body\">";
+                  ret += vx.descricao_curta;
+                  ret += "<hr></hr>";
+                  ret += "<a href='#' data-simulacao-id="+vx.id+" data-link-iframe-simulacao="+vx.iframe_link+" class='link_simulacao btn btn-success btn-block'>Simular!</a>"
+                ret += "</div>";
+                ret += "</div>";
+              ret += "</div>";
+            });
+
+          ret += "</div>";
+        });
+
+        $("#row_cards_simulacoes").html(ret);
+      }
+
+      /** Função que converte um array em um array separado por colunas **/
+      function split(array, cols) {
+      	var ret = [];
+      	if (cols==1 || array.length === 1){
+      		ret.push(array);
+      	}else{
+      		var size = Math.ceil(array.length / cols);
+      		for (var i = 0; i < cols; i++) {
+      			var start = i*size;
+      			ret.push(array.slice(start, start+size));
+      		}
+      	}
+      	return ret;
+      }
+
+      function preencher_menu_lateral(simulacoes){
+        var lista = $("#lista-categorias").empty();
+        var li = "";
+
+        li += "<li class='active'><a href='index.html'><i class='material-icons'>home</i> <span>Home</span></a></li>";
+        lista.append(li);
+
+        $.each(simulacoes["fisica"], function(key,val){
+           li = "<li>";
+            if(val.simulacoes.length > 0){
+              li+= "<a href='javascript:void(0);' class=\"menu-toggle\">";
+            }else {
+              li+= "<a href='#' class='link_simulacao'>";
+            }
+              li+= "<i class=\"material-icons\">"+val.icone+"</i>";
+              li+= "<span>"+val.titulo+"</span>";
+            li+= "</a>";
+
+            if(val.simulacoes.length > 0){
+                li += "<ul class=\"ml-menu\">";
+                  $.each(val.simulacoes, function(key_s, val_s){
+                    li += "<li>";
+                      li += "<a class='link_simulacao' data-simulacao-id="+val_s.id+" data-link-iframe-simulacao="+val_s.iframe_link+" href='#'>";
+                        li+= "<i class=\"material-icons\">"+val_s.icone+"</i>";
+                        li+= "<span>"+val_s.titulo+"</span>";
+                      li += "</a>";
+                    li += "</li>";
+                  });
+                li += "</ul>";
+            }
+          li += "</li>";
+          lista.append(li);
+        });
+      }
+
+    </script>
+
+</body>
+
+</html>
